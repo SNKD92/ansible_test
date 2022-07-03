@@ -1,7 +1,9 @@
 ---
 - hosts: all
   tasks:
-  - name: Install vim
+  - name: Install Software
     apt:
-      name: vim
+      pkg:
+      - vim
+      - htop
       state: latest
